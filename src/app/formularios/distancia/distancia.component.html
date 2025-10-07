@@ -1,0 +1,25 @@
+<div>
+  <h1>Calcular Distancia</h1>
+  <form [formGroup]="formulario2">
+    <div>
+      <label for="dis1">X1:</label>
+      <input id="dis1" formControlName="dis1" type="number">
+    </div>
+    <div>
+      <label for="dis2">Y1:</label>
+      <input id="dis2" formControlName="dis2" type="number">
+    </div>
+    <div>
+      <label for="dis3">X2:</label>
+      <input id="dis3" formControlName="dis3" type="number">
+    </div>
+    <div>
+      <label for="dis4">Y2:</label>
+      <input id="dis4" formControlName="dis4" type="number">
+    </div>
+    <button type="button" class="btn btn-primary" (click)="cal()">Calcular</button>
+    <div>
+      <h2>Resultado: {{ res }}</h2>
+    </div>
+  </form>
+</div>
