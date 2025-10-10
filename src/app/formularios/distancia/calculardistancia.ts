@@ -1,4 +1,4 @@
-extends class Calcular{
+export class Calcular{
   di1:number=0;
   di2:number=0;
   di3:number=0;

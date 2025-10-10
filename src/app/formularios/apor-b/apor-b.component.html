@@ -1,0 +1,17 @@
+<div>
+  <h1>Multiplicar Numeros</h1>
+  <form [formGroup]="form">
+    <div>
+      <label for="numeroA">Numero A:</label>
+      <input id="numeroA" formControlName="numeroA" type="number">
+    </div>
+    <div>
+      <label for="numeroB">Numero B:</label>
+      <input id="numeroB" formControlName="numeroB" type="number">
+    </div>
+    <button type="button" class="btn btn-primary" (click)="multi()">Calcular</button>
+    <div>
+      <h2>Resultado: {{operacionDisplay}}</h2>
+    </div>
+  </form>
+</div>
